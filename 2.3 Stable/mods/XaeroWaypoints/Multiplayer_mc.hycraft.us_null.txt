@@ -1,0 +1,9 @@
+waypoint:gui.xaero_deathpoint_old:D:-12:77:13:0:false:0:gui.xaero_default:false:0
+waypoint:gui.xaero_deathpoint_old:D:75:-78:35:0:false:0:gui.xaero_default:false:0
+waypoint:gui.xaero_deathpoint_old:D:-11:-75:20:0:false:0:gui.xaero_default:false:0
+waypoint:gui.xaero_deathpoint_old:D:-24:-74:-44:0:false:0:gui.xaero_default:false:0
+waypoint:gui.xaero_deathpoint_old:D:63:71:17:0:false:0:gui.xaero_default:false:0
+waypoint:gui.xaero_deathpoint_old:D:42:-74:11:0:false:0:gui.xaero_default:false:0
+waypoint:gui.xaero_deathpoint_old:D:81:-75:-16:0:false:0:gui.xaero_default:false:0
+waypoint:gui.xaero_deathpoint_old:D:-2:-74:-53:0:false:0:gui.xaero_default:false:0
+waypoint:gui.xaero_deathpoint:D:10:-74:-33:0:false:1:gui.xaero_default:false:0

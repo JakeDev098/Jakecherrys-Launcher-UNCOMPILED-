@@ -1,0 +1,24 @@
+[16:03:08] [Client thread/INFO]: LWJGL Version: 2.9.4
+[16:03:16] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:EntityCulling, FMLFileResourcePack:examplemod, FMLFileResourcePack:Better PVP Mod, FMLFileResourcePack:skid-machine, FMLFileResourcePack:FoamFix, FMLFileResourcePack:FPS Reducer, FMLFileResourcePack:Simple Inventory sorting, FMLFileResourcePack:LabyMod, FMLFileResourcePack:No Hurt Cam mod, FMLFileResourcePack:ProjectL, FMLFileResourcePack:, FMLFileResourcePack:TextureFix, FMLFileResourcePack:TNT Time, ! §b Dewier §f20k.zip
+[16:03:16] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[16:03:17] [Thread-9/INFO]: Initializing LWJGL OpenAL
+[16:03:17] [Thread-9/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[16:03:17] [Thread-9/INFO]: OpenAL initialized.
+[16:03:17] [Sound Library Loader/INFO]: Sound engine started
+[16:03:20] [Client thread/INFO]: Created: 8x8 textures-atlas
+[16:03:25] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:EntityCulling, FMLFileResourcePack:examplemod, FMLFileResourcePack:Better PVP Mod, FMLFileResourcePack:skid-machine, FMLFileResourcePack:FoamFix, FMLFileResourcePack:FPS Reducer, FMLFileResourcePack:Simple Inventory sorting, FMLFileResourcePack:LabyMod, FMLFileResourcePack:No Hurt Cam mod, FMLFileResourcePack:ProjectL, FMLFileResourcePack:, FMLFileResourcePack:TextureFix, FMLFileResourcePack:TNT Time, ! §b Dewier §f20k.zip
+[16:03:26] [Client thread/INFO]: SoundSystem shutting down...
+[16:03:26] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
+[16:03:26] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[16:03:26] [Thread-13/INFO]: Initializing LWJGL OpenAL
+[16:03:26] [Thread-13/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[16:03:27] [Thread-13/INFO]: OpenAL initialized.
+[16:03:27] [Sound Library Loader/INFO]: Sound engine started
+[16:03:28] [Client thread/INFO]: Created: 512x512 textures-atlas
+[16:04:29] [Client thread/INFO]: Connecting to mc.universocraft.net, 25565
+[16:05:41] [Client thread/ERROR]: ########## GL ERROR ##########
+[16:05:41] [Client thread/ERROR]: @ Post render
+[16:05:41] [Client thread/ERROR]: 1281: Invalid value
+[16:30:58] [Client thread/INFO]: Stopping!
+[16:30:58] [Client thread/INFO]: SoundSystem shutting down...
+[16:30:58] [Client thread/WARN]: Author: Paul Lamb, www.paulscode.com
