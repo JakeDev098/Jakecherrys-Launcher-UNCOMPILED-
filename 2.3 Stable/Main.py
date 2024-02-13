@@ -1,5 +1,5 @@
 ﻿#LIBRERIAS
-import customtkinter, os, minecraft_launcher_lib, subprocess, datetime, subprocess, tkinter, Saves, ast
+import customtkinter, os, minecraft_launcher_lib, subprocess, datetime, subprocess, tkinter, ast
 from tkinter import messagebox
 from PIL import Image
 
@@ -9,6 +9,7 @@ customtkinter.set_appearance_mode("dark")
 #VALORES
 user_windows = os.environ['USERNAME']
 L_Version = "2.3 Stable"
+Save_ram = ""
 
 #PERSONALIZAR
 minecraft_directory = f"C://Users//{user_windows}//AppData//Roaming//.jakecherry" #GAME DIRRECTORY
@@ -46,7 +47,7 @@ class App(customtkinter.CTk): #APP
         jvmar = self.jv_entry.get()
         try:
             ram_ = ast.literal_eval(jvmar)
-            Saves.ram = ram_
+            Save_ram = ram_
         except ValueError as e:
             self.inf_ung(e)
 
@@ -113,7 +114,7 @@ class App(customtkinter.CTk): #APP
                     'username': mine_user,
                     'uuid': '',
                     'token': '',
-                    'jvmArguments': Saves.ram
+                    'jvmArguments': Save_ram
                 }
                 try:
                     if 'forge' in mine_version.lower() or 'fabric' in mine_version.lower():
