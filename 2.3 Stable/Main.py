@@ -1,5 +1,5 @@
 ﻿#LIBRERIAS
-import customtkinter, os, minecraft_launcher_lib, subprocess, datetime, subprocess, tkinter, ast
+import customtkinter, os, minecraft_launcher_lib, subprocess, datetime, subprocess, tkinter, ast, Saves
 from tkinter import messagebox
 from PIL import Image
 
@@ -9,10 +9,9 @@ customtkinter.set_appearance_mode("dark")
 #VALORES
 user_windows = os.environ['USERNAME']
 L_Version = "2.3 Stable"
-Save_ram = ""
 
 #PERSONALIZAR
-minecraft_directory = f"C://Users//{user_windows}//AppData//Roaming//.jakecherry" #GAME DIRRECTORY
+minecraft_directory = f"C://Users//{user_windows}//AppData//Roaming//jakecherry" #GAME DIRRECTORY
 
 #OTHERS
 versiones = minecraft_launcher_lib.utils.get_installed_versions(minecraft_directory)
@@ -47,7 +46,7 @@ class App(customtkinter.CTk): #APP
         jvmar = self.jv_entry.get()
         try:
             ram_ = ast.literal_eval(jvmar)
-            Save_ram = ram_
+            Saves.ram = ram_
         except ValueError as e:
             self.inf_ung(e)
 
@@ -57,8 +56,11 @@ class App(customtkinter.CTk): #APP
         self.conf_frame.grid(row=0, column=0, sticky="ns")
 
     #SUGERENCIAS VERSIONES
-    def actualizar_sugerencias(self, event):
-        self.combobox_version['values'] = self.todas_las_versiones
+    def actualizar_sugerencias(self):
+        try:
+            self.combobox_version['values'] = self.todas_las_versiones
+        except:
+            self.combobox_version['values'] = "NAN"
 
     #IRSE AL MENU (FRAME)
     def men_event(self):
@@ -75,9 +77,6 @@ class App(customtkinter.CTk): #APP
         version_inst = self.combobox_version.get()
         if not version_inst:
             self.inf_ung("Por favor, ingresa una versión de Minecraft.")
-            self.men_event()
-        elif not version_inst.isdigit():
-            self.inf_ung("La versión ingresada debe contener solo números.")
             self.men_event()
         elif version_inst in todas_las_versiones:
             self.inf_ung(f"La versión {version_inst} ya está instalada.")
@@ -114,7 +113,7 @@ class App(customtkinter.CTk): #APP
                     'username': mine_user,
                     'uuid': '',
                     'token': '',
-                    'jvmArguments': Save_ram
+                    'jvmArguments': Saves.ram
                 }
                 try:
                     if 'forge' in mine_version.lower() or 'fabric' in mine_version.lower():
